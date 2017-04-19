@@ -192,7 +192,8 @@ module.exports = class Trakt {
             body: (method.body ? Object.assign({}, method.body) : {})
         };
 
-        if (method.opts['auth']) req.headers['Authorization'] = 'Bearer ' + this._authentication.access_token;
+        if (method.opts['auth'] && params.auth)
+            req.headers['Authorization'] = 'Bearer ' + this._authentication.access_token;
 
         for (let k in params) {
             if (k in req.body) req.body[k] = params[k];

@@ -1,5 +1,5 @@
 {
-    "name": "trakt.tv",
+    "name": "@dashersw/trakt.tv",
     "version": "5.0.1",
     "description": "Interact with Trakt.tv API in NodeJS",
     "keywords": ["trakt", "api", "wrapper", "node"],
